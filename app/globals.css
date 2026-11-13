@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-display: var(--font-playfair), Georgia, serif;
+    --font-sans-body: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+    --font-mono-tabular: var(--font-jetbrains), ui-monospace, monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #fbf9f5;
+    color: #1c1917;
+  }
+
+  body {
+    font-family: var(--font-sans-body);
+    background-color: #fbf9f5;
+    color: #1c1917;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-display {
+  font-family: var(--font-serif-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono-tabular);
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

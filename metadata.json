@@ -1,0 +1,6 @@
+{
+  "name": "Channel & Castle — Family Travel Planner",
+  "description": "A 10-day London, Central Paris, and Disneyland Paris itinerary, route order strategist, and anti-museum-fatigue pacing planner for two adults and two teenagers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
